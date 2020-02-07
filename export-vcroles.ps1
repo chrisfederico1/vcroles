@@ -4,7 +4,7 @@
     
 #>
 
-function export-vcpermsreport
+function export-vcrolesreport
 
 {
     
