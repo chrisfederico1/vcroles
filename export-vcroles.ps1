@@ -16,7 +16,7 @@ function export-vcpermsreport
         #[string]$Server,
 
         [Parameter(Mandatory=$false)]
-        [string]$Path = '.\vcpermsreport.csv'
+        [string]$Path = '.\vcrolessreport.csv'
     )
 
 BEGIN {
