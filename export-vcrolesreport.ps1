@@ -25,7 +25,7 @@ BEGIN {
 }
 PROCESS{
 
-    $roles += Get-VIRole | Select-Object @{N='VCENTER';E={$_.server}},Name,PrivilegeList
+    $roles += Get-VIRole | Select-Object @{N='VCENTER';E={$_.server}},Name,@{Name='PrivilegeList';E={$_.PrivilegeList -join ";"}}
 }
 
 END{
